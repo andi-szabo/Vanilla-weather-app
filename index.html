@@ -2,16 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+    <title>Weather app</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <title>Weather app</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
@@ -24,30 +30,30 @@
               class="current-weather-icon"
             />
           </div>
-          <div class="col-5 current-weather-info-wrapper">
-            <h1 id="city">New York</h1>
+          <div class="col-5 current-location-info-wrapper">
+            <h1 id="city">Antwerp</h1>
             <ul>
-              <li id="date">Friday 05:00</li>
+              <li id="date">18:00, Sat Jun 5</li>
               <li class="temperature-description" id="temperature-description">
-                Clear
+                Clouds
               </li>
             </ul>
           </div>
           <div class="col-2">
-            <h2 class="degrees" id="temperature">12</h2>
+            <h2 class="degrees" id="temperature">20</h2>
           </div>
           <div class="col- current-weather-info-wrapper">
             <div class="row">
               <div class="col-6">
-                <h4>°C</h4>
+                <h3>°C</h3>
               </div>
               <div class="col-6">
-                <h4>°F</h4>
+                <h3>°F</h3>
               </div>
             </div>
             <ul>
-              <li>Humidity: <span id="humidity">73%</span>%</li>
-              <li>Wind: <span id="wind">2 km/h</span>km/h</li>
+              <li>Humidity: <span id="humidity">86</span>%</li>
+              <li>Wind: <span id="wind">2</span>km/h</li>
             </ul>
           </div>
         </div>

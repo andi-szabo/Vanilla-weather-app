@@ -1,3 +1,92 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #cfe9ee;
+}
+
 h1 {
-  color: blue;
+  color: #092238;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h2 {
+  color: #092238;
+  font-size: 120px;
+  font-weight: 300;
+  text-align: right;
+  margin-top: -22px;
+  padding-top: 0;
+}
+
+h3 {
+  color: #092238;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  opacity: 90%;
+}
+
+.container {
+  margin-top: 12em;
+  width: 700px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 10px;
+  border: 1px solid #fff;
+}
+
+.current-weather-icon {
+  width: 50px;
+}
+
+.temperature-description {
+  text-transform: capitalize;
+}
+
+.current-weather-wrapper {
+  padding-top: 20px;
+}
+
+.current-weather-info-wrapper {
+  padding-left: 60px;
+}
+
+.current-location-info-wrapper {
+  padding-left: 30px;
+}
+
+.temperature {
+  font-size: 14px;
+  color: #092238;
+  text-align: right;
+}
+
+.footer-note-wrapper {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.footer-note {
+  color: #7d8a97;
+}
+
+.footer-note-link {
+  color: #092238;
+}
+
+.footer-note-link:hover {
+  color: #092238;
+  text-decoration: underline;
 }
