@@ -15,8 +15,54 @@
   </head>
   <body>
     <div class="container">
-      <h1>Hello world</h1>
-      <a href="" class="btn btn-primary">click</a>
+      <div class="current-weather-wrapper">
+        <div class="row">
+          <div class="col-1">
+            <img
+              src="images/sunny@2x.png"
+              alt="current weather"
+              class="current-weather-icon"
+            />
+          </div>
+          <div class="col-5 current-weather-info-wrapper">
+            <h1 id="city">New York</h1>
+            <ul>
+              <li id="date">Friday 05:00</li>
+              <li class="temperature-description" id="temperature-description">
+                Clear
+              </li>
+            </ul>
+          </div>
+          <div class="col-2">
+            <h2 class="degrees" id="temperature">12</h2>
+          </div>
+          <div class="col- current-weather-info-wrapper">
+            <div class="row">
+              <div class="col-6">
+                <h4>°C</h4>
+              </div>
+              <div class="col-6">
+                <h4>°F</h4>
+              </div>
+            </div>
+            <ul>
+              <li>Humidity: <span id="humidity">73%</span>%</li>
+              <li>Wind: <span id="wind">2 km/h</span>km/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-note-wrapper">
+      <small class="footer-note"
+        ><a
+          href="https://github.com/andi-szabo/weather-app"
+          target="_blank"
+          class="footer-note-link"
+          >open source code</a
+        >
+        by Andrea Szabo</small
+      >
     </div>
     <script src="src/app.js"></script>
   </body>
