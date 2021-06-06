@@ -33,6 +33,10 @@ li {
   opacity: 90%;
 }
 
+li:first-letter {
+  text-transform: capitalize;
+}
+
 .container {
   margin-top: 12em;
   width: 700px;
@@ -47,10 +51,6 @@ li {
 
 .current-weather-icon {
   width: 50px;
-}
-
-.temperature-description {
-  text-transform: capitalize;
 }
 
 .current-weather-wrapper {
