@@ -49,6 +49,16 @@ li:first-letter {
   border: 1px solid #fff;
 }
 
+.search {
+  width: 100%;
+  height: 52px;
+  border: solid 1px;
+  border-color: #fff;
+  border-radius: 50px;
+  padding-left: 20px;
+  margin-bottom: 40px;
+}
+
 .current-weather-icon {
   width: 50px;
 }
