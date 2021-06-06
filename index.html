@@ -38,6 +38,7 @@
               src=""
               alt="current weather icon"
               class="current-weather-icon"
+              id="current-weather-icon"
             />
           </div>
           <div class="col-5 current-weather-info-wrapper">
@@ -54,14 +55,10 @@
             <h2 class="degrees" id="temperature"></h2>
           </div>
           <div class="col- current-weather-info-wrapper">
-            <div class="row">
-              <div class="col-6">
-                <h3>°C</h3>
-              </div>
-              <div class="col-6">
-                <h3>°F</h3>
-              </div>
-            </div>
+            <h3 class="units">
+              <a href="#" id="celsius-link" class="active">°C</a> I
+              <a href="#" id="fahrenheit-link">°F</a>
+            </h3>
             <ul>
               <li>Humidity: <span id="humidity"></span>%</li>
               <li>Wind: <span id="wind"></span>km/h</li>
