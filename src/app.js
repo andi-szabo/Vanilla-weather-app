@@ -9,7 +9,7 @@ function formatDate(timestamp) {
     minutes = `0${minutes}`;
   }
 
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   let day = days[date.getDay()];
 
   let months = [
@@ -30,6 +30,47 @@ function formatDate(timestamp) {
   let currentDate = date.getDate();
 
   return `${hours}:${minutes}, ${day} ${month} ${currentDate}`;
+}
+
+function displayForecast(response) {
+  console.log(response.data.daily);
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Sun", "Mon", "Tue", "Wed"];
+
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+      <div class="col-sm-2">
+        <div class="forecast-wrapper">
+          <div class="weather-forecast-date">${day}</div>
+          <img
+            src="images/partly-sunny@2x.png"
+            alt="forecast weather icon"
+            class="forecast-weather-icon"
+          />
+          <div class="forecast-temperature-wrapper">
+            <span class="forecast-max-temp">17</span>
+            <span class="forecast-min-temp">7</span>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+  console.log(forecastHTML);
+}
+
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "3bca1d79b9964ec891a9f65830e74235";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayTemperature(response) {
@@ -54,6 +95,8 @@ function displayTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
 
 function search(city) {
