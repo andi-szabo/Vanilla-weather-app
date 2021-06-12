@@ -18,6 +18,12 @@ h2 {
   padding-top: 0;
 }
 
+h3 {
+  color: #092238;
+  font-size: 32px;
+  font-weight: 400;
+}
+
 ul {
   padding: 0;
 }
@@ -29,6 +35,10 @@ li {
 
 li:first-letter {
   text-transform: capitalize;
+}
+
+hr {
+  color: #092238;
 }
 
 .container {
@@ -85,10 +95,38 @@ li:first-letter {
   font-weight: 400;
 }
 
-.temperature {
+.forecast-wrapper {
+  padding-top: 40px;
+  margin-bottom: 0;
+}
+
+.forecast-weather-icon {
+  margin: 10px 0 20px 0;
+}
+
+.weather-forecast {
+  display: block;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.forecast-max-temp {
   font-size: 14px;
   color: #092238;
-  text-align: right;
+  padding-right: 5px;
+}
+
+.forecast-min-temp {
+  font-size: 14px;
+  color: #092238;
+  opacity: 70%;
+  padding-left: 5px;
 }
 
 .footer-note-wrapper {
