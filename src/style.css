@@ -64,9 +64,9 @@ hr {
 }
 
 .current-weather-icon {
-  width: 80px;
+  height: 65px;
   margin-right: 5px;
-  margin-top: 7px;
+  margin-top: 4px;
 }
 
 .current-weather-wrapper {
@@ -101,8 +101,8 @@ hr {
 }
 
 .forecast-weather-icon {
-  margin: 10px 0 20px 0;
-  width: 100%;
+  margin: 20px 0 20px 0;
+  height: 30px;
 }
 
 .forecast-wrapper {
@@ -134,7 +134,7 @@ hr {
   text-align: center;
   width: 100%;
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 .footer-note {

@@ -55,7 +55,7 @@ function displayForecast(response) {
         <div class="forecast-wrapper">
           <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
           <img
-            src="img/${forecastDay.weather[0].icon}.png width="50px"
+            src="img/${forecastDay.weather[0].icon}.png" 
             alt="forecast weather icon"
             class="forecast-weather-icon"
           />
